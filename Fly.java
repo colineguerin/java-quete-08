@@ -6,7 +6,9 @@ public interface Fly {
 
     int descend(int meters);
 
-    String glide();
+    default void glide() {
+        System.out.println("glides into the air");
+    }
 
     void land();
 }
